@@ -14,7 +14,7 @@ const BlogPost = async (  { params }: { params: Params } ) => {
   return (
     
       <div className="m-auto sm:max-w-2xl px-3">
-        <h1 className="text-4xl py-6 text-gray-700 font-semibold">
+        <h1 className="text-3xl text-center md:text-4xl py-6 text-gray-700 font-semibold">
           {post.title}
         </h1>
         <ReactMarkdown className="prose dark:prose-invert">{post.content}</ReactMarkdown>
