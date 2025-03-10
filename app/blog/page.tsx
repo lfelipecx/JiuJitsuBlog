@@ -8,7 +8,7 @@ const BlogHome = async () => {
 
   return (
     <div className="w-full">
-      <div className="m-auto max-w-2xl p-6">
+      <div className="m-auto max-w-4xl p-6">
         <h1 className="text-4xl pt-10 pb-12 text-center font-semibold">Jiu-Jitsu Root Blog</h1>
 
         <ul>
