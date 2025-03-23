@@ -20,7 +20,13 @@ const BlogHome = async () => {
               >
                 {post.title}
               </Link>
-              <p className="text-sm">{post.description}</p>
+              <p className="text-base">{post.description}</p>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="text-sm font-semibold"
+              >
+                Leia mais »
+              </Link>
               <div className="space-x-2">
                 {post.tags.map((tag) => (
                   <span key={tag} className="text-sm text-slate-400">
