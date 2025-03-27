@@ -35,7 +35,7 @@ const BlogHome = async () => {
                 ))}
               </div>
               
-              <p>Por {post.author.name}</p>
+              <p className="text-sm">Por {post.author.name}</p>
              
               <p className="text-sm pb-4">
                 {new Intl.DateTimeFormat("pt-BR").format(
