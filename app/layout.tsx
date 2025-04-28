@@ -4,12 +4,16 @@ import "./globals.css";
 import Header from "./_components/header";
 import Footer from "./_components/footer";
 import { ThemeProvider } from "./_components/theme-provider";
+import Analytics from "./_analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jiu-Jitsu Root Blog",
   description: "Blog destinado a falar de jiu-jitsu brasileiro",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -19,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Analytics />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
